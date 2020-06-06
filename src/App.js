@@ -2,7 +2,12 @@ import React, {Component} from "react"
 
 class App extends Component {
     render() {
-        return  <h1>Hello React</h1>;
+        return  (
+        <React.Fragment>
+            <h1>Hello React</h1>
+            <h2>Hello World</h2>
+        </React.Fragment>
+        );
     }
 }
 
