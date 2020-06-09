@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Pt from "prop-types";
 
 // const Student = props => {
 //   return (
@@ -22,7 +22,9 @@ class Student extends Component {
     );
   }
 }
-
+Student.propTypes = {
+  name: Pt.string
+};
 
 
 export default Student;
