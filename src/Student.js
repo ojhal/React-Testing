@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Pt from "prop-types";
+
+
 
 // const Student = props => {
 //   return (
@@ -10,21 +11,32 @@ import Pt from "prop-types";
 //   );
 // };
 
+// class Student extends Component {
+//   render() {
+//     console.log(this.props.name)
+//     console.log(this.props.roll)
+//     return (
+//       <div>
+//         <h1>Hello, {this.props.name}</h1>
+//         <h2>Your Roll: {this.props.roll}</h2>
+//       </div>
+//     );
+//   }
+// }
+// Student.propTypes = {
+//   name: Pt.string
+// };
+
 class Student extends Component {
+  state = {
+    name: "Rahul"
+
+  };
   render() {
-    console.log(this.props.name)
-    console.log(this.props.roll)
-    return (
-      <div>
-        <h1>Hello, {this.props.name}</h1>
-        <h2>Your Roll: {this.props.roll}</h2>
-      </div>
-    );
+    console.log(this.state.name)
+    return <h1>Hello, {this.state.name}</h1>;
   }
 }
-Student.propTypes = {
-  name: Pt.string
-};
 
 
 export default Student;
