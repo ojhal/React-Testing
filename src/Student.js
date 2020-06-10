@@ -1,5 +1,24 @@
 import React, { Component } from "react";
-
+class Student extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Ojhal",
+      roll: this.props.roll
+    };
+  }
+  handleClick = () => {
+    console.log("Button Clicked", this);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello, {this.state.name} Your roll number is {this.state.roll}</h1>
+        <button onClick={this.handleClick}>Click Me</button>
+      </div>
+    );
+  }
+}
 
 
 // const Student = props => {
@@ -27,16 +46,17 @@ import React, { Component } from "react";
 //   name: Pt.string
 // };
 
-class Student extends Component {
-  state = {
-    name: "Rahul"
+// class Student extends Component {
+//   state = {
+//     name: "Rahul",
+//     roll: this.props.roll
 
-  };
-  render() {
-    console.log(this.state.name)
-    return <h1>Hello, {this.state.name}</h1>;
-  }
-}
+//   };
+//   render() {
+//     console.log(this.state.name)
+//     return <h1>Hello, {this.state.name} Your roll number is: {this.state.roll}</h1>;
+//   }
+// }
 
 
 export default Student;
