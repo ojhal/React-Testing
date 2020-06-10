@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Student from "./Student";
+import SetState from "./SetState";
 
-ReactDOM.render(<Student name="Rahul" />, document.getElementById("root"));
+ReactDOM.render(<SetState roll="755" />, document.getElementById("root"));

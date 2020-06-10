@@ -1,13 +1,14 @@
 import React from "react";
 
 function Student(props) {
-  const handleClick = () => {
+  const handleClick = (e) => {
+
     console.log("Button Clicked");
   }
   return (
     <div>
       <h1>Hello {props.name}</h1>
-      <button onClick={handleClick}>Click Me</button>
+      <a href="http://www.geekyshows.com" onClick={handleClick}>Click Me</a>
     </div>
   );
 }
