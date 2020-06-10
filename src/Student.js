@@ -1,24 +1,37 @@
-import React, { Component } from "react";
-class Student extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Ojhal",
-      roll: this.props.roll
-    };
+import React from "react";
+
+function Student(props) {
+  const handleClick = () => {
+    console.log("Button Clicked");
   }
-  handleClick = () => {
-    console.log("Button Clicked", this);
-  }
-  render() {
-    return (
-      <div>
-        <h1>Hello, {this.state.name} Your roll number is {this.state.roll}</h1>
-        <button onClick={this.handleClick}>Click Me</button>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h1>Hello {props.name}</h1>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
+  );
 }
+
+// class Student extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       name: "Ojhal",
+//       roll: this.props.roll
+//     };
+//   }
+//   handleClick = () => {
+//     console.log("Button Clicked", this);
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hello, {this.state.name} Your roll number is {this.state.roll}</h1>
+//         <button onClick={this.handleClick}>Click Me</button>
+//       </div>
+//     );
+//   }
+// }
 
 
 // const Student = props => {
