@@ -9,7 +9,9 @@ class SetState extends Component {
     };
   }
   handleClick = () => {
-    this.setState({ name: "Rajat", roll: "999" });
+    this.setState((state, props) => {
+      console.log(props.roll);
+    });
 
   };
 

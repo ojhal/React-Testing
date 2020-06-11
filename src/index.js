@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SetState from "./SetState";
+import PassingArgument from "./PassingArgument";
 
-ReactDOM.render(<SetState roll="755" />, document.getElementById("root"));
+ReactDOM.render(<PassingArgument />, document.getElementById("root"));
