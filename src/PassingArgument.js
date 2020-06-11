@@ -7,19 +7,17 @@ class PassingArgument extends Component {
     name: "Ojhal"
   };
 
-  handleClick = id => {
-    console.log(id);
-  };
-
-  handleClickArg = () => {
-    this.handleClick(this.state.id);
+  handleClick = (id, j, e) => {
+    console.log(id, j, e);
   };
 
   render() {
     return (
       <div>
         <h1>Hello, {this.state.name}</h1>
-        <button onClick={this.handleClickArg}>Delete</button>
+        <button onClick={(e) => {
+          this.handleClick(this.state.id, "101", e);
+        }}>Delete</button>
 
       </div>
     );
