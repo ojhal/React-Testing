@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PassingArgument from "./PassingArgument";
+import Mounting from "./Mounting";
 
-ReactDOM.render(<PassingArgument />, document.getElementById("root"));
+ReactDOM.render(<Mounting name="I_am_mounting_prop" />, document.getElementById("root"));
