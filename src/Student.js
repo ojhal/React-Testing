@@ -1,17 +1,32 @@
-import React from "react";
+import React, { Component } from "react";
+import Marks from "./Marks";
 
-function Student(props) {
-  const handleClick = (e) => {
+class Student extends Component {
+  render() {
+    console.log("Student-Rendered [child of Mounting]");
+    return (
+      <div>
+        <h1>Hello {this.props.name}</h1>
+        <Marks />
 
-    console.log("Button Clicked");
+      </div>
+    );
   }
-  return (
-    <div>
-      <h1>Hello {props.name}</h1>
-      <a href="http://www.geekyshows.com" onClick={handleClick}>Click Me</a>
-    </div>
-  );
 }
+
+
+// function Student(props) {
+//   const handleClick = (e) => {
+
+//     console.log("Button Clicked");
+//   }
+//   return (
+//     <div>
+//       <h1>Hello {props.name}</h1>
+//       <a href="http://www.geekyshows.com" onClick={handleClick}>Click Me</a>
+//     </div>
+//   );
+// }
 
 // class Student extends Component {
 //   constructor(props) {
