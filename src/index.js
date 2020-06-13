@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Mounting from "./Mounting";
+import Unmounting from "./Unmounting";
+import Child from "./Child";
 
-
-ReactDOM.render(<Mounting name="I_am_mounting_prop" />, document.getElementById("root"));
+ReactDOM.render(<Unmounting />, document.getElementById("root"));
+ReactDOM.render(<Child />, document.getElementById("stu"));
+ReactDOM.unmountComponentAtNode(document.getElementById("root"));
