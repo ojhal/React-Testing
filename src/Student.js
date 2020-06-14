@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import Marks from "./Marks";
+// import React, { Component } from "react";
+// import Marks from "./Marks";
 
-class Student extends Component {
-  render() {
-    console.log("Student-Rendered [child of Mounting]");
-    return (
-      <div>
-        <h1>Hello {this.props.name}</h1>
-        <Marks />
+// class Student extends Component {
+//   render() {
+//     console.log("Student-Rendered [child of Mounting]");
+//     return (
+//       <div>
+//         <h1>Hello {this.props.name}</h1>
+//         <Marks />
 
-      </div>
-    );
-  }
-}
+//       </div>
+//     );
+//   }
+// }
 
 
 // function Student(props) {
