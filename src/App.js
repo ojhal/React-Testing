@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
-import User from './User'
+
 
 
 
 export default class App extends Component {
   render() {
-    const primeMember = this.props.primeMember
+    const arr = [10, 20, 30, 40];
     return (
-      <React.Fragment>
-        <h1>Welcome User</h1>
-        {primeMember && <User />}
-
-      </React.Fragment>
+      <ul>
+        <li>{arr[0]}</li>
+      </ul>
     )
 
 
