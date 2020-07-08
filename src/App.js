@@ -5,17 +5,12 @@ import React, { Component } from 'react'
 
 export default class App extends Component {
   render() {
-    const btnStyle = {
-      color: "blue",
-      backgroundColor: "orange"
+    const txtc = {
+      color: "blue"
     };
-    return (
-      <div>
-        <button style={btnStyle}>button</button>
 
-      </div>
-
-    )
+    return <h1 style={{ ...txtc, ...{ fontSize: "200px" } }}
+    >Hello App</h1>;
   }
 }
 //   state = {
