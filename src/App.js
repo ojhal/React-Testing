@@ -4,13 +4,25 @@ import React, { Component } from 'react'
 
 
 export default class App extends Component {
+  state = {
+    change: false
+  };
+  clickHandle = () => {
+    this.setState({ change: true });
+  };
   render() {
-    const txtc = {
-      color: "blue"
+    const btnStyle = {
+      color: "blue",
+      fontSize: "50px",
+      backgroundColor: "orange"
     };
+    if (this.state.change) {
+      btnStyle.backgroundColor = "grey";
+    }
 
-    return <h1 style={{ ...txtc, ...{ fontSize: "200px" } }}
-    >Hello App</h1>;
+    return (
+      <button onClick={this.clickHandle} style={btnStyle}>Button</button>
+    );
   }
 }
 //   state = {
