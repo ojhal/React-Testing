@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-
+import "./User.css"
 export default class User extends Component {
   render() {
-    return <h3>Prime Member</h3>
+    return <h1 className="txt">Hello User</h1>
   }
 }

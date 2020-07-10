@@ -1,30 +1,30 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
 
 
 
-export default class App extends Component {
-  state = {
-    change: false
-  };
-  clickHandle = () => {
-    this.setState({ change: true });
-  };
-  render() {
-    const btnStyle = {
-      color: "blue",
-      fontSize: "50px",
-      backgroundColor: "orange"
-    };
-    if (this.state.change) {
-      btnStyle.backgroundColor = "grey";
-    }
+// export default class App extends Component {
+//   state = {
+//     change: false
+//   };
+//   clickHandle = () => {
+//     this.setState({ change: true });
+//   };
+//   render() {
+//     const btnStyle = {
+//       color: "blue",
+//       fontSize: "50px",
+//       backgroundColor: "orange"
+//     };
+//     if (this.state.change) {
+//       btnStyle.backgroundColor = "grey";
+//     }
 
-    return (
-      <button onClick={this.clickHandle} style={btnStyle}>Button</button>
-    );
-  }
-}
+//     return (
+//       <button onClick={this.clickHandle} style={btnStyle}>Button</button>
+//     );
+//   }
+// }
 //   state = {
 //     users: [
 //       { id: 101, name: "Rahul", password: "3245gfgf" },
@@ -49,6 +49,23 @@ export default class App extends Component {
 
 //   }
 // }
+
+import React, { Component } from 'react'
+import "./App.css"
+import User from './User'
+export default class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h1 className="txt1">Hello App</h1>
+        <User />
+      </React.Fragment >
+    );
+
+
+  }
+}
+
 
 
 
