@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import "./User.css"
+import React, { Component } from 'react';
+import Styles from "./User.module.css";
 export default class User extends Component {
   render() {
-    return <h1 className="txt">Hello User</h1>
+    return <h1 className={Styles.txt}>Hello User</h1>
   }
 }
