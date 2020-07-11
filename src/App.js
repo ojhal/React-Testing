@@ -53,18 +53,14 @@
 import React, { Component } from 'react';
 export default class App extends Component {
   state = {
-    value: "ojhal"
+    value: "this is some text in a text area"
   };
-  handleChange = (e) => {
-    console.log(e.target.value);
-    this.setState({ value: e.target.value.toUpperCase().substr(0, 10) });
-  };
+
   render() {
     return (
       <div>
         <form>
-          <h1>Controlled by React</h1>
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <textarea value={this.state.value} />
         </form>
       </div >
     );
