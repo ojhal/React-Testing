@@ -51,15 +51,15 @@
 // }
 
 import React, { Component } from 'react';
-import Styles from "./App.module.css";
-import User from './User';
 export default class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <h1 className={Styles.txt}>Hello App</h1>
-        <User />
-      </React.Fragment >
+      <div>
+        <form>
+          <h1>Controlled by React</h1>
+          <input type="text" defaultValue="ojhal" />
+        </form>
+      </div >
     );
 
 
