@@ -50,25 +50,52 @@
 //   }
 // }
 
-import React, { Component } from 'react';
-export default class App extends Component {
-  state = {
-    value: "this is some text in a text area"
-  };
+// import React, { Component } from 'react';
+// export default class App extends Component {
+//   state = {
+//     value: "this is some text in a text area"
+//   };
 
+//   render() {
+//     return (
+//       <div>
+//         <form>
+//           <textarea value={this.state.value} />
+//         </form>
+//       </div >
+//     );
+
+
+//   }
+// }
+
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.textInput = React.createRef();
+  }
+  componentDidMount = () => {
+    // console.log(this.textInput.current)
+    this.textInput.current.focus();
+  }
   render() {
     return (
-      <div>
-        <form>
-          <textarea value={this.state.value} />
-        </form>
-      </div >
-    );
-
+      <form>
+        Name: <input type="text" />
+        <br />
+        <br />
+        password: <input type="text" ref={this.textInput} />
+        <br />
+        <br />
+        Address: <input type="text" />
+      </form>
+    )
 
   }
 }
-
 
 
 
