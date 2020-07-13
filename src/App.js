@@ -104,15 +104,13 @@
 //   
 
 import React, { Component } from "react";
-
+import pic from "./pic.jpg"
 export default class App extends Component {
   render() {
     return (
       <div>
         <img
-          src={process.env.PUBLIC_URL + "/pic.jpg"}
-          alt="Mypic"
-          width="300px"
+          src={pic} alt="mypic" width="300px"
         />
       </div>
     );
