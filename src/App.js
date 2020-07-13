@@ -109,6 +109,7 @@ export default class App extends Component {
     return (
       <div>
         <button className="alert alert-success">Normal button</button>
+        <button className="alert alert-warning">Normal button</button>
       </div>
     );
   }
