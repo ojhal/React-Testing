@@ -104,12 +104,16 @@
 //   
 
 import React, { Component } from "react";
+import Ojhal from './Ojhal'
+import Rahul from './Rahul'
 export default class App extends Component {
+
   render() {
     return (
       <div>
-        <button className="alert alert-success">Normal button</button>
-        <button className="alert alert-warning">Normal button</button>
+        <Ojhal />
+        <Rahul />
+
       </div>
     );
   }
